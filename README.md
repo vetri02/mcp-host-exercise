@@ -18,7 +18,7 @@ git clone https://github.com/vetri02/mcp-host-exercise.git
 cd mcp-host-exercise
 ~~~
 
-or download the same files as a zip from https://aisec.engineering/ai-security-engineering-mcp-host-exercise.zip and unzip it.
+Or use GitHub's Code button and choose Download ZIP, then unzip it.
 
 ## Watch it fail
 
@@ -50,13 +50,27 @@ stages, hints and deliverables are in `targets/mcp_shield/README.md`.
 Edit only `hardened.py`. The other files in the target are the attacker's side of
 the table or the grader's evidence; the grader is the contract.
 
-## Then
+## The whole course
 
 The exercise is Module 10 of a twenty-four-module course with an offline
 reference lab, three more graded targets, milestone assessments and a capstone.
-The whole course reads free at https://aisec.engineering, and the course folder
-downloads from the same site. Module 10 explains the two ideas this target
-turns on: a token has an audience, and a tool description is untrusted input.
+The course reads free at https://aisec.engineering. The course folder, with
+everything you run (the lab, all four targets, the templates, the answer keys
+and the tutor skill for AI assistants), is in this repository as
+[ai-security-engineering-v1.5.zip](ai-security-engineering-v1.5.zip), about 700 KB:
+
+~~~bash
+unzip ai-security-engineering-v1.5.zip
+cd ai-security-engineering-1.5
+shasum -a 256 -c SHA256SUMS.txt      # optional: every line should say OK
+~~~
+
+The whole course is also here as one PDF, [AI-Security-Engineering-Handbook-v1.5.pdf](AI-Security-Engineering-Handbook-v1.5.pdf)
+(265 pages, about 5.5 MB), for reading offline; the website at
+https://aisec.engineering has the same text with the recordings embedded.
+
+Module 10 explains the two ideas this target turns on: a token has an audience,
+and a tool description is untrusted input.
 
 ## Licence
 
